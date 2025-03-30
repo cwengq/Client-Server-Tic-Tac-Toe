@@ -8,7 +8,8 @@ public class Main {
         System.out.println("Starting Game...");
         Socket clientSocket;
         try{
-            clientSocket = new Socket("192.168.137.1", 1234);
+            String IPAddress = "";
+            clientSocket = new Socket(IPAddress, 1234);
 
             //send name
             System.out.print("Enter name: ");
